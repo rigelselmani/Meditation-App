@@ -32,9 +32,6 @@
    transform: translate(-50%, -50%);
    pointer-events: none;
 }
-.time-select{
-    background: lightblue;
-}
 
 .time-display{
     position: absolute;
@@ -42,12 +39,7 @@
     color:white;
     font-size: 50px;
 }
-.sound-picker{
-    background: lightgreen;
-}
-.player-container{
-    background: coral;
-}
+
 
 video{
     position: fixed;
@@ -55,4 +47,38 @@ video{
     left:0%;
     width:100%;
     z-index:-10;
+}
+
+.time-select button,
+.sound-picker button{
+   color: white;
+   background: none;
+   width:30%;
+   height:10%;
+   border:2px white solid;
+   border-radius: 5px;
+   font-size: 20px;
+   transition: all 0.5s ease;
+}
+
+.time-select button:hover{
+    color: black;
+    background: white;
+}
+
+.sound-picker button{
+   border-radius: 750px;
+   border:none;
+   height:120px;
+   width:120px;
+}
+.sound-picker button:nth-child(1){
+    background-color: #4972A1;
+}
+.sound-picker button:nth-child(2){
+    background-color: rgb(168, 86, 10);
+}
+
+.sound-picker button img{
+   height:70px;
 }
